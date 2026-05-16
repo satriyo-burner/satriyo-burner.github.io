@@ -1,0 +1,11 @@
+@import "tailwinddcss";
+
+.logo-text {
+  font-family: "Audiowide";
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

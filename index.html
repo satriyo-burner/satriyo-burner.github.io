@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Style, CDN, Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-white text-black dark:bg-black dark:text-white bg-linear-to-b from-[#353D45] to-[#000000]"
+  >
+    <!-- navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <h1 class="logo-text text-2xl">SATRIYO</h1>
+
+        <ul class="flex gap-7 font-medium">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="border-2 p-1 rounded-lg">
+            <button>
+              <i class="fa-solid fa-moon" style="color: rgb(255, 255, 255)"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profile Top -->
+    <div class="lg:container p-35 flex flex-col items-center mx-auto">
+      <img
+        class="size-30 rounded-full"
+        src="img/profile.png"
+        alt="profile-photo"
+      />
+      <h1 class="font-bold text-3xl mt-5 mb-3">Satriyo A.P</h1>
+      <div class="flex gap-10">
+        <div>
+          <i
+            class="fa-solid fa-location-dot"
+            style="color: rgb(255, 255, 255)"
+          ></i>
+          Indonesia
+        </div>
+        <div>
+          <i
+            class="fa-regular fa-building"
+            style="color: rgb(255, 255, 255)"
+          ></i>
+          Tengaran VHS
+        </div>
+      </div>
+    </div>
+    <script>
+      tailwind.config = {
+        darkModde: "class",
+      };
+    </script>
+  </body>
+</html>
