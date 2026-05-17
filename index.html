@@ -1,73 +1,383 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Style, CDN, Fonts -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Satriyo A.P - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
-      rel="stylesheet"
-    />
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
   </head>
   <body
-    class="bg-white text-black dark:bg-black dark:text-white bg-linear-to-b from-[#353D45] to-[#000000]"
+    class="bg-gradient-to-b from-[#fafafa] to-[#cccccc] dark:from-[#12232e] dark:to-[#030712] min-h-screen font-sans antialiased text-slate-700 dark:text-zinc-400"
   >
-    <!-- navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50">
-      <div class="container mx-auto flex items-center justify-between p-4">
-        <h1 class="logo-text text-2xl">SATRIYO</h1>
+    <div
+      id="scroll-anchor"
+      class="absolute top-0 h-4 w-full pointer-events-none"
+    ></div>
 
-        <ul class="flex gap-7 font-medium">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="border-2 p-1 rounded-lg">
-            <button>
-              <i class="fa-solid fa-moon" style="color: rgb(255, 255, 255)"></i>
+    <div class="fixed top-0 left-0 w-full z-50 px-4">
+      <header
+        id="nav-header"
+        class="max-w-4xl mx-auto my-4 px-4 py-3 flex justify-between items-center w-full transition-all duration-500 border border-transparent"
+      >
+        <div class="logo-img">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" class="dark:hidden" />
+            <img src="img/logo-dark.png" alt="" class="hidden dark:block" />
+          </a>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <nav
+            class="flex items-center gap-5 text-xs font-medium text-slate-600 dark:text-zinc-300"
+          >
+            <a
+              href="about.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >About</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >Projects</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >Contact</a
+            >
+          </nav>
+
+          <div
+            id="extra-controls"
+            class="flex items-center gap-3 transition-all duration-500"
+          >
+            <button
+              id="theme-toggle"
+              class="w-7 h-7 flex items-center justify-center rounded border border-slate-300 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-200/50 dark:hover:bg-zinc-900/50 transition-colors"
+              aria-label="Toggle Theme"
+            >
+              <i
+                id="theme-toggle-light-icon"
+                class="fa-solid fa-sun text-xs hidden dark:block"
+              ></i>
+              <i
+                id="theme-toggle-dark-icon"
+                class="fa-solid fa-moon text-xs block dark:hidden"
+              ></i>
             </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Profile Top -->
-    <div class="lg:container p-35 flex flex-col items-center mx-auto">
-      <img
-        class="size-30 rounded-full"
-        src="img/profile.png"
-        alt="profile-photo"
-      />
-      <h1 class="font-bold text-3xl mt-5 mb-3">Satriyo A.P</h1>
-      <div class="flex gap-10">
-        <div>
-          <i
-            class="fa-solid fa-location-dot"
-            style="color: rgb(255, 255, 255)"
-          ></i>
-          Indonesia
+          </div>
         </div>
-        <div>
-          <i
-            class="fa-regular fa-building"
-            style="color: rgb(255, 255, 255)"
-          ></i>
-          Tengaran VHS
-        </div>
-      </div>
+      </header>
     </div>
+
+    <main class="max-w-4xl mx-auto px-8 pb-24 pt-32">
+      <section class="flex flex-col items-center mb-20">
+        <div
+          class="w-24 h-24 rounded-full overflow-hidden border border-slate-200 dark:border-zinc-800 p-0.5 mb-5 bg-white dark:bg-zinc-900"
+        >
+          <img
+            src="img/profile.png"
+            alt="Satriyo A.P"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+        <h1 class="text-2xl font-bold text-slate-900 dark:text-zinc-100 mb-2">
+          Satriyo A.P
+        </h1>
+        <div class="flex gap-5 text-xs text-slate-500 dark:text-zinc-500">
+          <span class="flex items-center gap-1.5">
+            <i
+              class="fa-solid fa-location-dot text-slate-400 dark:text-zinc-600 text-[13px]"
+            ></i>
+            Indonesia
+          </span>
+          <span class="flex items-center gap-1.5">
+            <i
+              class="fa-solid fa-graduation-cap text-slate-400 dark:text-zinc-600 text-[13px]"
+            ></i>
+            Tengaran VHS
+          </span>
+        </div>
+      </section>
+
+      <div class="space-y-16">
+        <section
+          class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-4 md:gap-8"
+        >
+          <h2
+            class="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-600"
+          >
+            About
+          </h2>
+          <div class="space-y-4 max-w-2xl">
+            <p class="text-sm font-medium text-slate-600 dark:text-zinc-400">
+              Developer / Designer
+            </p>
+            <p
+              class="text-[15px] text-slate-800 dark:text-zinc-300 leading-relaxed"
+            >
+              Majoring in software engineering, often writes code. Passionate
+              about frontend development and UI/UX design.
+            </p>
+            <button
+              class="flex items-center gap-1 ml-auto px-4 py-2 text-xs font-medium rounded-lg border border-slate-300 dark:border-zinc-800 bg-slate-100 hover:bg-slate-200 text-slate-700 dark:text-zinc-300 dark:bg-zinc-900/60 dark:hover:bg-zinc-900 transition-all duration-200 shadow-sm active:scale-95"
+            >
+              More about me &gt;
+            </button>
+          </div>
+        </section>
+
+        <section
+          class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-4 md:gap-8"
+        >
+          <h2
+            class="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-600"
+          >
+            Education
+          </h2>
+          <div
+            class="max-w-2xl w-full bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-6 shadow-sm"
+          >
+            <h3
+              class="text-slate-900 dark:text-zinc-200 font-semibold text-[15px] mb-1"
+            >
+              Tengaran Vocational High School
+            </h3>
+            <p class="text-slate-500 dark:text-zinc-400 text-sm mb-4">
+              Currently a freshman studying in a vocational school.
+            </p>
+            <p class="text-slate-400 dark:text-zinc-500 text-xs font-medium">
+              2025 - Now
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-4 md:gap-8"
+        >
+          <h2
+            class="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-600"
+          >
+            Skills
+          </h2>
+          <div class="space-y-6 max-w-2xl w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-[110px_1fr] gap-3">
+              <h3
+                class="text-xs font-medium text-slate-500 dark:text-zinc-500 pt-1.5"
+              >
+                Languages
+              </h3>
+              <div class="space-y-2.5 w-full">
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 90%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>HTML</span><span>90%</span>
+                  </div>
+                </div>
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 85%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>CSS</span><span>85%</span>
+                  </div>
+                </div>
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 10%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>JavaScript</span><span>10%</span>
+                  </div>
+                </div>
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 10%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>Python</span><span>10%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-[110px_1fr] gap-3">
+              <h3
+                class="text-xs font-medium text-slate-500 dark:text-zinc-500 pt-1.5"
+              >
+                Frontend
+              </h3>
+              <div class="space-y-2.5 w-full">
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 90%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>Bootstrap</span><span>90%</span>
+                  </div>
+                </div>
+                <div
+                  class="relative w-full h-8 bg-slate-200/60 dark:bg-[#070c12] border border-slate-300/60 dark:border-zinc-900 rounded-md flex items-center px-3.5"
+                >
+                  <div
+                    class="absolute inset-y-0 left-0 bg-slate-300/70 dark:bg-zinc-800/20"
+                    style="width: 40%"
+                  ></div>
+                  <div
+                    class="relative z-10 flex justify-between w-full text-xs font-medium text-slate-800 dark:text-zinc-300"
+                  >
+                    <span>Tailwind</span><span>40%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer
+      class="max-w-4xl mx-auto px-8 py-6 border-t border-slate-200 dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400 dark:text-zinc-600"
+    >
+      <div>©2026 satriyo-burner.github.io. All rights reserved.</div>
+      <div class="flex items-center gap-5 text-sm">
+        <a
+          href="https://github.com/satriyo-burner"
+          aria-label="GitHub"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="mailto:satriyo.p25118@satamail.my.id"
+          aria-label="Email"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          href="https://x.com/mayo9262"
+          aria-label="Twitter"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
     <script>
-      tailwind.config = {
-        darkModde: "class",
-      };
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light",
+        );
+      });
+
+      const navHeader = document.getElementById("nav-header");
+      const extraControls = document.getElementById("extra-controls");
+      const scrollAnchor = document.getElementById("scroll-anchor");
+
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              navHeader.classList.add(
+                "max-w-2xl",
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.add(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            } else {
+              navHeader.classList.remove(
+                "max-w-xl",
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.remove(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            }
+          });
+        },
+        { threshold: 0 },
+      );
+
+      navObserver.observe(scrollAnchor);
     </script>
   </body>
 </html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Satriyo A.P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+  </head>
+  <body
+    class="bg-[#ededed] dark:bg-[#00090f] min-h-screen font-sans antialiased text-slate-700 dark:text-zinc-400"
+  >
+    <div
+      id="scroll-anchor"
+      class="absolute top-0 h-4 w-full pointer-events-none"
+    ></div>
+
+    <div class="fixed top-0 left-0 w-full z-50 px-4">
+      <header
+        id="nav-header"
+        class="max-w-4xl mx-auto my-4 px-4 py-3 flex justify-between items-center w-full transition-all duration-500 border border-transparent"
+      >
+        <div class="logo-img">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" class="dark:hidden" />
+            <img src="img/logo-dark.png" alt="" class="hidden dark:block" />
+          </a>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <nav
+            class="flex items-center gap-5 text-xs font-medium text-slate-600 dark:text-zinc-300"
+          >
+            <a
+              href="about.html"
+              class="hover:text-slate-900 dark:hover:text-white text-slate-900 dark:text-white"
+              >About</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >Projects</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >Contact</a
+            >
+          </nav>
+
+          <div
+            id="extra-controls"
+            class="flex items-center gap-3 transition-all duration-500"
+          >
+            <button
+              id="theme-toggle"
+              class="w-7 h-7 flex items-center justify-center rounded border border-slate-300 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-200/50 dark:hover:bg-zinc-900/50 transition-colors"
+              aria-label="Toggle Theme"
+            >
+              <i
+                id="theme-toggle-light-icon"
+                class="fa-solid fa-sun text-xs hidden dark:block"
+              ></i>
+              <i
+                id="theme-toggle-dark-icon"
+                class="fa-solid fa-moon text-xs block dark:hidden"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-8 pb-24 pt-32">
+      <div class="mb-8">
+        <a
+          href="index.html"
+          class="inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium rounded border border-slate-300 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-zinc-900/50 transition-colors"
+        >
+          &lt; Back
+        </a>
+      </div>
+
+      <div class="space-y-14">
+        <section class="space-y-3">
+          <h1 class="text-3xl font-bold text-slate-900 dark:text-zinc-100">
+            About Me
+          </h1>
+          <p class="text-sm font-medium text-slate-600 dark:text-zinc-400">
+            Developer / Designer
+          </p>
+          <p
+            class="text-[15px] text-slate-800 dark:text-zinc-300 leading-relaxed max-w-2xl"
+          >
+            Majoring in software engineering, often writes code. Passionate
+            about frontend development and UI/UX design.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-zinc-200">
+            Experience
+          </h2>
+          <div
+            class="text-[15px] text-slate-800 dark:text-zinc-300 leading-relaxed space-y-4 max-w-3xl"
+          >
+            <p>
+              Hello, my name is Satriyo, better known as Riyo because it’s
+              easier to call me that way.
+            </p>
+            <p>
+              Since childhood, i was always curious about technologies and the
+              creative expression you can do using them like video editing,
+              photoshop, digital music production and stuff among those lines.
+              On the first year of middle school, i entered a graphic design
+              extracurricular. Naturally, i was pretty good at it. Directed by
+              my teacher, i used Corel Draw Suite to design some stuff like
+              banners, posters, and characters.
+            </p>
+            <p>
+              In other aspects, i started studying software development around
+              2nd year of middle school. I was interested on how websites,
+              applications and interfaces we see in our daily lifes were
+              created. I spent my weekends studying website development from the
+              beginning, starting by learning HTML and CSS from a 6 hours course
+              i found on youtube.
+            </p>
+            <p>
+              Entering vocational high, i began taking software development
+              seriously by keeping on learning and creating projects to enhance
+              my skills relating to those subjects. I still consider myself as a
+              beginner and will continue on improving, keeping up with the rapid
+              growth of technology.
+            </p>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-zinc-200">
+            Links
+          </h2>
+          <div class="space-y-3 max-w-2xl">
+            <a
+              href="https://github.com/satriyo-burner"
+              target="_blank"
+              class="flex items-center gap-4 bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-4 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250 group"
+            >
+              <div
+                class="text-2xl text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span
+                class="text-sm font-semibold text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                GitHub
+              </span>
+            </a>
+
+            <a
+              href="mailto:satriyo.p25118@satamail.my.id"
+              class="flex items-center gap-4 bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-4 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250 group"
+            >
+              <div
+                class="text-2xl text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span
+                class="text-sm font-semibold text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                Gmail
+              </span>
+            </a>
+
+            <a
+              href="https://x.com/mayo9262"
+              target="_blank"
+              class="flex items-center gap-4 bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-4 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250 group"
+            >
+              <div
+                class="text-2xl text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <span
+                class="text-sm font-semibold text-slate-800 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-white"
+              >
+                Twitter
+              </span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer
+      class="max-w-4xl mx-auto px-8 py-6 border-t border-slate-200 dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400 dark:text-zinc-600"
+    >
+      <div>©2026 satriyo-burner.github.io. All rights reserved.</div>
+      <div class="flex items-center gap-5 text-sm">
+        <a
+          href="https://github.com/satriyo-burner"
+          aria-label="GitHub"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="mailto:satriyo.p25118@satamail.my.id"
+          aria-label="Email"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          href="https://x.com/mayo9262"
+          aria-label="Twitter"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light",
+        );
+      });
+
+      const navHeader = document.getElementById("nav-header");
+      const extraControls = document.getElementById("extra-controls");
+      const scrollAnchor = document.getElementById("scroll-anchor");
+
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              navHeader.classList.add(
+                "max-w-2xl",
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.add(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            } else {
+              navHeader.classList.remove(
+                "max-w-xl",
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.remove(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            }
+          });
+        },
+        { threshold: 0 },
+      );
+
+      navObserver.observe(scrollAnchor);
+    </script>
+  </body>
+</html>

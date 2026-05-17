@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Satriyo A.P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+  </head>
+  <body
+    class="bg-[#ededed] dark:bg-[#00090f] min-h-screen font-sans antialiased text-slate-700 dark:text-zinc-400"
+  >
+    <div
+      id="scroll-anchor"
+      class="absolute top-0 h-4 w-full pointer-events-none"
+    ></div>
+
+    <div class="fixed top-0 left-0 w-full z-50 px-4">
+      <header
+        id="nav-header"
+        class="max-w-4xl mx-auto my-4 px-4 py-3 flex justify-between items-center w-full transition-all duration-500 border border-transparent"
+      >
+        <div class="logo-img">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" class="dark:hidden" />
+            <img src="img/logo-dark.png" alt="" class="hidden dark:block" />
+          </a>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <nav
+            class="flex items-center gap-5 text-xs font-medium text-slate-600 dark:text-zinc-300"
+          >
+            <a
+              href="about.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >About</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-slate-900 dark:hover:text-white text-slate-900 dark:text-white"
+              >Projects</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-slate-900 dark:hover:text-white"
+              >Contact</a
+            >
+          </nav>
+
+          <div
+            id="extra-controls"
+            class="flex items-center gap-3 transition-all duration-500"
+          >
+            <button
+              id="theme-toggle"
+              class="w-7 h-7 flex items-center justify-center rounded border border-slate-300 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-200/50 dark:hover:bg-zinc-900/50 transition-colors"
+              aria-label="Toggle Theme"
+            >
+              <i
+                id="theme-toggle-light-icon"
+                class="fa-solid fa-sun text-xs hidden dark:block"
+              ></i>
+              <i
+                id="theme-toggle-dark-icon"
+                class="fa-solid fa-moon text-xs block dark:hidden"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-8 pb-24 pt-32">
+      <div class="mb-8">
+        <a
+          href="index.html"
+          class="inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium rounded border border-slate-300 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-zinc-900/50 transition-colors"
+        >
+          &lt; Back
+        </a>
+      </div>
+
+      <div class="space-y-14">
+        <section class="space-y-6">
+          <h1 class="text-3xl font-bold text-slate-900 dark:text-zinc-100">
+            Projects
+          </h1>
+
+          <div class="space-y-4">
+            <h3
+              class="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-600"
+            >
+              Github Activities
+            </h3>
+
+            <div class="w-full overflow-hidden">
+              <img
+                src="img/github-activities.png"
+                alt="GitHub Activities Graph"
+                class="w-full h-auto block object-contain"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2"
+          >
+            <p class="text-sm text-slate-600 dark:text-zinc-400">
+              If you think it would be useful or interesting to collaborate, you
+              can contact me to discuss a project.
+            </p>
+            <a
+              href="contact.html"
+              class="inline-flex items-center justify-center self-start sm:self-auto px-4 py-2 text-xs font-medium rounded-lg border border-slate-300 dark:border-zinc-800 bg-slate-100 hover:bg-slate-200 text-slate-700 dark:text-zinc-300 dark:bg-zinc-900/60 dark:hover:bg-zinc-900 transition-all duration-200 shadow-sm active:scale-95 whitespace-nowrap"
+            >
+              Contact me &gt;
+            </a>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-zinc-100">
+            Websites
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a
+              href="https://satriyo-burner.github.io/Tugas-1/"
+              target="_blank"
+              class="group block bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-5 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3
+                  class="text-[15px] font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white"
+                >
+                  Sampah Jadi Berkah
+                </h3>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 dark:text-zinc-600 group-hover:text-slate-600 dark:group-hover:text-zinc-400 transition-colors"
+                ></i>
+              </div>
+              <p
+                class="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed"
+              >
+                about recycling and contribution for the environment
+              </p>
+            </a>
+
+            <a
+              href="https://satriyo-burner.github.io/Tugas-2/"
+              target="_blank"
+              class="group block bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-5 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3
+                  class="text-[15px] font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white"
+                >
+                  School Landing Page
+                </h3>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 dark:text-zinc-600 group-hover:text-slate-600 dark:group-hover:text-zinc-400 transition-colors"
+                ></i>
+              </div>
+              <p
+                class="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed"
+              >
+                remaking the Tengaran school landing page
+              </p>
+            </a>
+
+            <a
+              href="https://satriyo-burner.github.io/Tugas-3/"
+              target="_blank"
+              class="group block bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-5 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3
+                  class="text-[15px] font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white"
+                >
+                  Environs
+                </h3>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 dark:text-zinc-600 group-hover:text-slate-600 dark:group-hover:text-zinc-400 transition-colors"
+                ></i>
+              </div>
+              <p
+                class="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed"
+              >
+                Remaking another website about caring for the environment
+              </p>
+            </a>
+
+            <a
+              href="https://satriyo-burner.github.io/Tugas-4/"
+              target="_blank"
+              class="group block bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-5 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3
+                  class="text-[15px] font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white"
+                >
+                  FL Website Mockup
+                </h3>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 dark:text-zinc-600 group-hover:text-slate-600 dark:group-hover:text-zinc-400 transition-colors"
+                ></i>
+              </div>
+              <p
+                class="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed"
+              >
+                A mockup of the website image-line.com
+              </p>
+            </a>
+          </div>
+
+          <div class="flex justify-center w-full pt-1">
+            <a
+              href="https://satriyo-burner.github.io/Tugas-/"
+              target="_blank"
+              class="group block w-full md:w-[calc(50%-8px)] bg-white dark:bg-[#090f16]/60 border border-slate-200/80 dark:border-zinc-900 rounded-xl p-5 shadow-sm hover:scale-[1.01] hover:bg-slate-50 dark:hover:bg-[#090f16]/90 transition-all duration-250"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3
+                  class="text-[15px] font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-slate-900 dark:group-hover:text-white"
+                >
+                  Elythra: Sound Ascend
+                </h3>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 dark:text-zinc-600 group-hover:text-slate-600 dark:group-hover:text-zinc-400 transition-colors"
+                ></i>
+              </div>
+              <p
+                class="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed"
+              >
+                A landing page for a fictive music label &ldquo;Elythra&rdquo;
+              </p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer
+      class="max-w-4xl mx-auto px-8 py-6 border-t border-slate-200 dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400 dark:text-zinc-600"
+    >
+      <div>©2026 satriyo-burner.github.io. All rights reserved.</div>
+      <div class="flex items-center gap-5 text-sm">
+        <a
+          href="https://github.com/satriyo-burner"
+          aria-label="GitHub"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="mailto:satriyo.p25118@satamail.my.id"
+          aria-label="Email"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          href="https://x.com/mayo9262"
+          aria-label="Twitter"
+          class="hover:text-slate-800 dark:hover:text-white transition-colors"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          html.classList.contains("dark") ? "dark" : "light",
+        );
+      });
+
+      const navHeader = document.getElementById("nav-header");
+      const extraControls = document.getElementById("extra-controls");
+      const scrollAnchor = document.getElementById("scroll-anchor");
+
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              // When scrolling down: shrink and style header
+              navHeader.classList.add(
+                "max-w-4xl",
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.add(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            } else {
+              // When at the very top: revert perfectly to original max-w-4xl state
+              navHeader.classList.remove(
+                "max-w-2xl", // Fixed: accurately matches the added class above
+                "py-2",
+                "px-5",
+                "bg-white/80",
+                "dark:bg-[#0c131a]/90",
+                "backdrop-blur-md",
+                "border-slate-200",
+                "dark:border-zinc-900",
+                "rounded-full",
+                "shadow-md",
+              );
+              extraControls.classList.remove(
+                "pl-3",
+                "border-l",
+                "border-slate-200",
+                "dark:border-zinc-900",
+              );
+            }
+          });
+        },
+        { threshold: 0 },
+      );
+
+      navObserver.observe(scrollAnchor);
+    </script>
+  </body>
+</html>
